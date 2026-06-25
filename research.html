@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Franziska Bender</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+
+  <header class="site">
+    <img class="portrait" src="images/headshot.jpg" alt="Franziska Bender">
+    <div class="name">
+      <h1>Franziska Bender</h1>
+      <div class="role">Postdoctoral researcher, University of St.Gallen</div>
+    </div>
+  </header>
+
+  <nav class="primary">
+    <a href="index.html">Home</a>
+    <a href="research.html" class="active">Research</a>
+    <a href="cv.html">CV &amp; contact</a>
+  </nav>
+
+  <h2>Working papers</h2>
+
+  <div class="paper">
+    <div class="title">Economic News and Personal Income Expectations</div>
+    <div class="meta">Working paper, 2025</div>
+    <p class="abstract">
+      We study how subjective expectations about personal income are shaped by economic
+      news provided by the media. We address two questions: first, does publicly available
+      information in the form of news topics affect households' income expectations? Second,
+      do households use this information efficiently? To answer this, we combine household
+      survey data from the Michigan Survey of Consumers with a corpus of roughly 3 million
+      articles from <em>The Wall Street Journal</em> and <em>The New York Times</em>. We use
+      a Latent Dirichlet Allocation (LDA) model to construct monthly time series for the
+      prominence and tone of 70 economic news topics. Our analysis yields two key findings.
+      First, we establish that news content has significant predictive power for households'
+      future income expectations. Second, and our main contribution, we find compelling
+      evidence that households use this information inefficiently. While household forecasts
+      suffer from large general biases, a model that optimally processes news topics can
+      reduce the remaining forecast error for realized income substantially. This belief
+      distortion stems from households over-relying on their private information or judgment
+      and mis-weighting information from news topics. Our results help explain the origins of
+      systematic errors in personal income expectations, identifying the inefficient
+      processing of public information from the media as a significant driver. This suggests
+      that models of expectation formation may need to incorporate deviations from rational
+      processing to fully capture household behaviour.
+    </p>
+    <div class="links">
+      <a href="papers/news-and-income-expectations.pdf">[PDF]</a>
+    </div>
+  </div>
+
+  <div class="paper">
+    <div class="title">Uncertain Innovation and Growth Traps</div>
+    <div class="meta">Working paper, 2025</div>
+    <p class="abstract">
+      Does the inherent uncertainty of innovation make economies vulnerable to persistent stagnation? 
+      I study this question in an expanding-variety endogenous growth model with two features absent 
+      from standard frameworks: aggregate uncertainty about the returns to R&D, and learning from market 
+      outcomes. Firms cannot observe the conditions determining their future profits and instead infer them 
+      from the noisy outcomes of other innovators. Because firms do not account for the value of the 
+      information their R&D reveals to others, this learning creates an informational externality that 
+      can produce growth traps - periods where innovation and growth remain persistently low even after 
+      fundamentals have recovered. The mechanism is belief persistence: pessimistic firms invest little, 
+      which chokes off the signals that would reveal improved conditions, so beliefs recover only sluggishly. 
+      Strikingly, these traps arise even when uncertainty, in itself, encourages R&D, highlighting the crucial 
+      role of belief dynamics in shaping long-run growth.
+    </p>
+    <div class="links">
+      <a href="papers/uncertain-innovation-growth-traps.pdf">[PDF]</a>
+    </div>
+  </div>
+
+  <div class="paper">
+    <div class="title">Disentangling Uncertainty: Risk-Type Shocks and Firm Investment in Innovation and Capital</div>
+    <div class="meta">Working paper, 2025</div>
+    <p class="abstract">
+      The theoretical and empirical literature provides mixed evidence on the effect of
+      uncertainty on R&amp;D investment. We hypothesize that this ambiguity arises because the
+      effect depends on the type of uncertainty a firm faces. This paper, therefore,
+      investigates how different types of risk shocks affect R&amp;D and capital investment. To
+      do so, we introduce a novel methodology that exploits a specific feature of SEC
+      disclosure regulation: the requirement that firms report &ldquo;material changes&rdquo;
+      to their risk factors in quarterly 10-Q filings. Using textual analysis, we leverage
+      this rule to create a new dataset of firm-specific, time-varying shocks to distinct risk
+      categories. Our analysis yields two main findings. First, the effect of risk shocks on
+      R&amp;D is highly heterogeneous: shocks related to regulatory risk decrease R&amp;D, while
+      shocks related to financial and technological risk increase it. Second, the set of risks
+      that matter for R&amp;D is almost entirely different from the set that matters for capital
+      investment. Our results suggest that to better understand the effect of uncertainty on
+      firm decisions, it is important to move beyond a monolithic view and consider the
+      heterogeneous impacts of its different sources.
+    </p>
+    <div class="links">
+      <a href="papers/risk-type-shocks-investment.pdf">[PDF]</a>
+    </div>
+  </div>
+
+  <h2>Research interests</h2>
+  <p>
+    Endogenous Growth and Innovation; Uncertainty and Belief Formation; Text as Data; Debt Dynamics; Fiscal Policy
+  </p>
+
+  <footer class="site">
+    &copy; <span id="yr"></span> Franziska Bender.
+  </footer>
+
+</div>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>

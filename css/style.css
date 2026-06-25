@@ -1,0 +1,148 @@
+/* franziskabender.com */
+:root {
+  --ink: #111;
+  --muted: #555;
+  --rule: #d8d8d8;
+  --accent: #6b1f1f;
+  --bg: #fdfcf9;
+  --max: 760px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+header.site {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 1.5rem;
+}
+
+header.site img.portrait {
+  width: 120px;
+  height: auto;
+  border-radius: 4px;
+  flex-shrink: 0;
+  background: #eee;
+}
+
+header.site .name h1 {
+  font-size: 1.8rem;
+  margin: 0 0 0.2rem;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+}
+
+header.site .name .role {
+  color: var(--muted);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+nav.primary {
+  margin: 1.25rem 0 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.95rem;
+}
+
+nav.primary a {
+  margin-right: 1.25rem;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+nav.primary a:hover,
+nav.primary a.active {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin: 1.5rem 0 0.4rem;
+  font-weight: bold;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(107, 31, 31, 0.3);
+}
+
+a:hover {
+  border-bottom-color: var(--accent);
+}
+
+.paper {
+  margin: 1.5rem 0 1.75rem;
+  padding-left: 0;
+}
+
+.paper .title {
+  font-weight: bold;
+  font-size: 1.02rem;
+  margin-bottom: 0.25rem;
+}
+
+.paper .meta {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.paper .abstract {
+  margin: 0.5rem 0 0.5rem;
+}
+
+.paper .links {
+  font-size: 0.9rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.paper .links a { margin-right: 0.75rem; }
+
+footer.site {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+@media (max-width: 520px) {
+  header.site { flex-direction: column; }
+  header.site img.portrait { width: 100px; }
+  nav.primary a { display: inline-block; margin-bottom: 0.4rem; }
+}
